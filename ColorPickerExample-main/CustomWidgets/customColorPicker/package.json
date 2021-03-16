@@ -1,0 +1,31 @@
+{
+  "name": "customcolorpicker",
+  "widgetName": "CustomColorPicker",
+  "version": "1.0.0",
+  "description": "color picker modal",
+  "copyright": "2020 Mendix Technology BV",
+  "author": "Stefan",
+  "config": {
+    "projectPath": "../..//",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": "3000"
+  },
+  "packagePath": "stefan",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server --open",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^8.14.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-color": "^2.19.3"
+  }
+}

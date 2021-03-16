@@ -1,0 +1,10 @@
+import { Component, createElement } from "react";
+
+import { ColorPickerModal } from "./components/ColorPickerModal";
+import "./ui/CustomColorPicker.css";
+
+export default class CustomColorPicker extends Component {
+    render() {
+        return <ColorPickerModal sampleText={this.props.sampleText} />;
+    }
+}

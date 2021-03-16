@@ -1,0 +1,12 @@
+import { Component, ReactNode, createElement } from "react";
+import { PopUp } from "./components/PopUp";
+
+import { ColorPickerPopUpContainerProps } from "../typings/ColorPickerPopUpProps";
+
+import "./ui/ColorPickerPopUp.css";
+
+export default class ColorPickerPopUp extends Component<ColorPickerPopUpContainerProps> {
+    render(): ReactNode {
+        return <PopUp />;
+    }
+}

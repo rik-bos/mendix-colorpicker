@@ -1,0 +1,15 @@
+import { Component, ReactNode, createElement } from "react";
+import { PopUp } from "./components/PopUp";
+import { ColorPickerPopUpPreviewProps } from "../typings/ColorPickerPopUpProps";
+
+declare function require(name: string): string;
+
+export class preview extends Component<ColorPickerPopUpPreviewProps> {
+    render(): ReactNode {
+        return <PopUp />;
+    }
+}
+
+export function getPreviewCss(): string {
+    return require("./ui/ColorPickerPopUp.css");
+}

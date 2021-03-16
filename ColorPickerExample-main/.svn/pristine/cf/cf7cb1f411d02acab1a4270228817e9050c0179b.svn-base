@@ -1,0 +1,22 @@
+import { Component, createElement } from "react";
+import { SketchPicker } from "react-color";
+
+export class PopUpView extends Component {
+    state = {
+        background: "#fff"
+    };
+
+    handleChangeComplete = color => {
+        this.setState({ background: color.hex });
+    };
+
+    render() {
+        return (
+            <div style={{ width: "80vw", height: "20vh", zIndex: 100, backgroundColor: "red" }}>
+                <SketchPicker color={this.state.background} onChangeComplete={this.handleChangeComplete} />
+
+                <p>current color + {this.state.background}</p>
+            </div>
+        );
+    }
+}

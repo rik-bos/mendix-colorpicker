@@ -1,0 +1,12 @@
+import { Component, createElement } from "react";
+import { ColorPickerModal } from "./components/ColorPickerModal";
+
+export class preview extends Component {
+    render() {
+        return <ColorPickerModal sampleText={this.props.sampleText} />;
+    }
+}
+
+export function getPreviewCss() {
+    return require("./ui/CustomColorPicker.css");
+}
